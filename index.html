@@ -13,10 +13,17 @@
 
     body {
       background-color: hsl(212, 45%, 89%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      height: 100vh;
     }
 
     .attribution {
       font-size: 11px;
+      padding: 5px;
       text-align: center;
     }
 
@@ -27,17 +34,25 @@
     .element {
       background-color: hsl(0, 0%, 100%);
       margin: auto;
-      width: 70%;
-      padding: 3%;
-      display: grid;
+      padding: 20px;
+      width: 240px;
       border-radius: 2%;
+      display: flex;
+      flex-flow: column wrap;
     }
 
-    h2 {
+    h3 {
       font-family: "Outfit", sans-serif;
       font-weight: 700;
       text-align: center;
-      color:hsl(218, 44%, 22%);
+      color: hsl(218, 44%, 22%);
+    }
+
+    img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 2%;
     }
 
     .small_text {
@@ -48,23 +63,13 @@
       color:hsl(216, 15%, 48%);
     }
 
-    img {
-      border-radius: 2%;
-      width: 100%;
-      max-width: fit-content;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-
   </style>
 </head>
 <body>
   <div class="element">
     <img src="images\image-qr-code.png">
-    <h2>Improve your front-end <br>skills by building projects</h2>
-    <p class="small_text">Scan the QR code to visit Frontend<br> Mentor and take your coding skills to<br> the next level</p>
+    <h3>Improve your front-end skills by building projects</h3>
+    <p class="small_text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
   </div>
   
   <div class="attribution">
